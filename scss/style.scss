@@ -1,0 +1,65 @@
+@import './materialize';
+
+// Variables
+$header-bg: url('../img/gallery/background4.jpg');
+$header-height: 300px;
+
+// Text Color Function
+@function set-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return #000000;
+	} 	@else {
+		@return #ffffff;
+	}
+}
+
+.main-header {
+	background: $header-bg;
+	color: #fff;
+	height: $header-height;
+	margin-bottom: 30px;
+}
+
+h1 {
+	margin: 0px;
+	padding-top: 30px;
+}
+
+body {
+	background: $primary-color;
+	color: set-text-color($primary-color);
+}
+
+.img-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 300px;
+}
+
+.card-content {
+	color: $primary-color;
+}
+
+.page-footer {
+	background: $secondary-color;
+
+	.footer-copyright {
+		background: $secondary-color-light;
+	}
+}
+
+.modal {
+	color: #333;
+}
+
+.responsive-tag {
+	height: 100%;
+	width: 100%;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+	opacity: 0;
+}
