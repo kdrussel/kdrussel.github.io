@@ -58,16 +58,16 @@
     <div class="row row-1">
       <div class="col m6 hide-on-small-only">
         <div class="img-content">
-          <h3>Airbud</h3>
+          <h3>Beauty By Chels</h3>
           Dreamcatcher flexitarian helvetica pork belly af 90's. DIY snackwave butcher viral schlitz. Everyday carry street art pug direct trade. Hashtag mixtape etsy, hot chicken shaman sriracha farm-to-table distillery cold-pressed.
         </div>
       </div>
       <div class="col m6">
         <div class="card">
           <div class="card-image">
-            <img src="img/gallery/airbud1.png" alt="">
-            <span class="card-title">Airbud</span>
-            <a href="#airbud1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+            <img src="img/gallery/beautybychels1.png" alt="">
+            <span class="card-title">Beauty By Chels</span>
+            <a href="beautybychels.html" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
             <i class="material-icons">add</i>
             </a>
           </div>
@@ -85,6 +85,35 @@
     </div>
     <!-- Row 2 -->
     <div class="row row-2">
+      <div class="col m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/gallery/airbud1.png" alt="">
+            <span class="card-title">Airbud</span>
+            <a href="#fleurtour1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+            <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col m6 hide-on-small-only">
+        <div class="img-content">
+          <h3><a href="#airbud1">Airbud</a></h3>
+          Dreamcatcher flexitarian helvetica pork belly af 90's. DIY snackwave butcher viral schlitz. Everyday carry street art pug direct trade. Hashtag mixtape etsy, hot chicken shaman sriracha farm-to-table distillery cold-pressed.
+        </div>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="row row-3">
       <div class="col m6">
         <div class="card">
           <div class="card-image">
@@ -112,8 +141,8 @@
         </div>
       </div>
     </div>
-    <!-- Row 3 -->
-    <div class="row row-3">
+    <!-- Row 4 -->
+    <div class="row row-4">
       <div class="col m6 hide-on-small-only">
         <div class="img-content">
           <h3>fleurish</h3>
@@ -244,6 +273,11 @@
         },
         {
           selector: '.row-3', offset: 400, callback: function(el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-4', offset: 500, callback: function(el) {
             Materialize.fadeInImage($(el));
           }
         }
