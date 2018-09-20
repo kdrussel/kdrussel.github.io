@@ -6846,7 +6846,7 @@ h1 {
   padding-top: 30px; }
 
 body {
-  background: #00796b;
+  background: /*#00796b*/#004b79;
   color: #ffffff; }
 
 .img-content {
